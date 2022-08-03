@@ -5,7 +5,7 @@ import Header from "./Layouts/Header"
 import AudioPlayer from "./Components/AudioPlayer";
 import Result from "./Components/Result";
 
-import "./Assets/Styles/index.css";
+import "./index.css";
 
 function App() {
   const [res, setRes] = useState(null);

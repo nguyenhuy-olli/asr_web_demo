@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ReactMic } from "react-mic";
-import WaveSurfer from "wavesurfer";
+import WaveSurfer from "wavesurfer.js";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
@@ -12,8 +12,6 @@ import { red } from "@material-ui/core/colors";
 import PauseIcon from "@material-ui/icons/Pause";
 import Grid from "@material-ui/core/Grid";
 import MicIcon from "@material-ui/icons/Mic";
-
-require('dotenv').config();
 
 const useStyles = makeStyles(theme => ({
     card: {
