@@ -7,9 +7,8 @@ make: *** No rule to make target 'all'.  Stop.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Thu Aug 04 18:06:19 2022
+# Make data base, printed on Thu Aug 04 18:48:33 2022
 
 # Variables
 
@@ -32,8 +31,7 @@ VSCODE_CWD = C:\WINDOWS\System32
 # environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
-SYST 
-EMROOT = C:\WINDOWS
+SYSTEMROOT = C:\WINDOWS
 # environment
 NVCUDASAMPLES11_5_ROOT = D:\appdata
 # environment
@@ -45,10 +43,9 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7836_KIVSKSDAJZUZUWTH
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_19932_NLPOWJUICJSUCPXS
 # environment
-VS160COMCOMNTOOLS = C:\Program Files (x8 
-6)\Microsoft Visual Studio\2019\Community\Common7\Tools\
+VS160COMCOMNTOOLS = C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -67,8 +64,8 @@ LANG = C
 .LOADED := 
 # environment
 TMP = C:\Users\Dell\AppData\Local\Temp
-#  
-default
+# 
+ default
 .INCLUDE_DIRS = .
 # environment
 PROCESSOR_ARCHITEW6432 = AMD64
@@ -87,8 +84,7 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 PROGRAMFILES = C:\Program Files (x86)
 # environment
-MFLAGS 
- = -pqrR
+MFLAGS = -pqrR
 # default
 .SHELLFLAGS := -c
 # environment
@@ -100,7 +96,7 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 7836
+VSCODE_PID = 19932
 # environment
 CUDA_PATH = D:\Program Files
 # automatic
@@ -110,8 +106,7 @@ CUDA_PATH = D:\Program Files
 # automatic
 <D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
 # environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","availableL 
-anguages":{},"_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
 ONEDRIVECONSUMER = C:\Users\Dell\OneDrive
 # default
@@ -135,9 +130,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = D:\Program 
- Files\bin;D:\Program Files\libnvvp;C:\Program Files\Common Files\Oracle\Java\javapath;D:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\MATLAB\R2019a\runtime\win64;D:\MATLAB\R2019a\bin;D:\MATLAB\R2019a\polyspace\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2021.3.1\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Javalib;D:\Program Files\Git\cmd;D:\Program Files\nodejs\;D:\ffmpeg-2022-07-18-git-cb22d5ea3c-full_build\ffmpeg-2022-07-18-git-cb22d5ea3c-full_build\bin;D:\Program Files\CMake\bin;D:\Python39\Scripts\;D:\Python39\;C:\Users\Dell\AppData\Local\Microsoft\WindowsApps;D:\texlive\2020\bin\win32;C:\Users\Dell\AppData\Roaming\cabal\bin;C:\ProgramData\chocolatey\lib\ghc\tools\ghc-8.10.4\bin;C:\tools\msys64;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin;D:\Microsoft VS Code\bin;C:\Users\Dell\AppData\Local\Microsoft\WindowsApps;C:\Users\Dell\AppData\Local\GitHubDesktop\bin;D:\Javalib;D:\Program Files\JetBrains\PyCharm 2021.3.1\bin;;D:\Program Files\JetBrains\PyCharm Community Edition 2021.3.1 
-\bin;;D:\Flutter\flutter\bin;D:\Apps\Library\bin;C:\Users\Dell\AppData\Roaming\npm;
+PATH = D:\Program Files\bin;D:\Program Files\libnvvp;C:\Program Files\Common Files\Oracle\Java\javapath;D:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\MATLAB\R2019a\runtime\win64;D:\MATLAB\R2019a\bin;D:\MATLAB\R2019a\polyspace\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2021.3.1\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Javalib;D:\Program Files\Git\cmd;D:\Program Files\nodejs\;D:\ffmpeg-2022-07-18-git-cb22d5ea3c-full_build\ffmpeg-2022-07-18-git-cb22d5ea3c-full_build\bin;D:\Program Files\CMake\bin;D:\Python39\Scripts\;D:\Python39\;C:\Users\Dell\AppData\Local\Microsoft\WindowsApps;D:\texlive\2020\bin\win32;C:\Users\Dell\AppData\Roaming\cabal\bin;C:\ProgramData\chocolatey\lib\ghc\tools\ghc-8.10.4\bin;C:\tools\msys64;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin;D:\Microsoft VS Code\bin;C:\Users\Dell\AppData\Local\Microsoft\WindowsApps;C:\Users\Dell\AppData\Local\GitHubDesktop\bin;D:\Javalib;D:\Program Files\JetBrains\PyCharm 2021.3.1\bin;;D:\Program Files\JetBrains\PyCharm Community Edition 2021.3.1\bin;;D:\Flutter\flutter\bin;D:\Apps\Library\bin;C:\Users\Dell\AppData\Roaming\npm;
 # environment
 ZES_ENABLE_SYSMAN = 1
 # environment
@@ -156,8 +149,7 @@ PROMPT = $P$G
 CHOCOLATEYLASTPATHUPDATE = Tue Jun 21 14:17:56 2022
 # environment
 NVTOOLSEXT_PATH = C:\Program Files\NVIDIA Corporation\NvToolsExt\
-# environme 
-nt
+# environment
 LOGONSERVER = \\QUANGZILAPTOP
 # environment
 USERNAME = Dell
@@ -202,8 +194,8 @@ HOMEDRIVE = C:
 # environment
 PROCESSOR_ARCHITECTURE = x86
 # environment
-PYCHARM COMMUNITY EDITION = D:\Program Files\JetBrains\PyCh 
-arm Community Edition 2021.3.1\bin;
+PYCHARM COMMUNITY EDITION = D:\Program Files\JetBrains\Py 
+Charm Community Edition 2021.3.1\bin;
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -283,8 +275,7 @@ makefile:
 #  Failed to be updated.
 
 # Not a target:
-makefile. 
-mak:
+makefile.mak:
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
@@ -306,12 +297,12 @@ GNUmakefile:
 # No general ('VPATH' variable) search path.
 
 # strcache buffers: 1 (0) / strings = 13 / storage = 104 B / avg = 8 B
-# curren 
-t buf: size = 8174 B / used = 104 B / count = 13 / avg = 8 B
+# curr 
+ent buf: size = 8174 B / used = 104 B / count = 13 / avg = 8 B
 
 # strcache performance: lookups = 16 / hit rate = 18%
 # hash-table stats:
 # Load=13/8192=0%, Rehash=0, Collisions=0/16=0%
-# Finished Make data base on Thu Aug 04 18:06:19 2022
+# Finished Make data base on Thu Aug 04 18:48:33 2022
 
  

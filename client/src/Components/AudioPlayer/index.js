@@ -110,7 +110,7 @@ function AudioPlayer({ pushRes }) {
                     pushRes(json)
                 });
         }
-    }, [tempFile, pushRes]);
+    }, [tempFile]);
 
     const togglePlayback = () => {
         if (!isPlaying) {
@@ -180,7 +180,7 @@ function AudioPlayer({ pushRes }) {
                             />
                         )}
                     </Grid>
-                    <Grid item container justify="center" className={classes.buttons}>
+                    <Grid item container justifyContent="center" className={classes.buttons}>
                         <Grid item container direction="row"
                             justifyContent="space-between"
                             alignItems="center" xs={12}>
