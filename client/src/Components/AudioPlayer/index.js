@@ -13,8 +13,6 @@ import PauseIcon from "@material-ui/icons/Pause";
 import Grid from "@material-ui/core/Grid";
 import MicIcon from "@material-ui/icons/Mic";
 
-// require('dotenv').config();
-
 const useStyles = makeStyles(theme => ({
     card: {
         maxWidth: 600,
