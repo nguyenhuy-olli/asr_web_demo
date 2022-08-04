@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ReactMic } from "react-mic";
-import WaveSurfer from "wavesurfer";
+import WaveSurfer from "wavesurfer.js";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
@@ -13,7 +13,7 @@ import PauseIcon from "@material-ui/icons/Pause";
 import Grid from "@material-ui/core/Grid";
 import MicIcon from "@material-ui/icons/Mic";
 
-require('dotenv').config();
+// require('dotenv').config();
 
 const useStyles = makeStyles(theme => ({
     card: {
@@ -112,7 +112,7 @@ function AudioPlayer({ pushRes }) {
                     pushRes(json)
                 });
         }
-    }, [tempFile]);
+    }, [tempFile, pushRes]);
 
     const togglePlayback = () => {
         if (!isPlaying) {
@@ -130,13 +130,13 @@ function AudioPlayer({ pushRes }) {
 
     if (!isPlaying) {
         transportPlayButton = (
-            <IconButton onClick={togglePlayback}>
+            <IconButton onClick={togglePlayback} disabled={!tempFile || record}>
                 <PlayArrowIcon className={classes.icon} />
             </IconButton>
         );
     } else {
         transportPlayButton = (
-            <IconButton onClick={togglePlayback}>
+            <IconButton onClick={togglePlayback} disabled={!tempFile || record}>
                 <PauseIcon className={classes.icon} />
             </IconButton>
         );
@@ -212,7 +212,7 @@ function AudioPlayer({ pushRes }) {
                             )}
                             <Grid item>
                             {transportPlayButton}
-                            <IconButton onClick={stopPlayback}>
+                            <IconButton onClick={stopPlayback} disabled={!tempFile || record}>
                                     <StopIcon className={classes.icon} />
                                 </IconButton>
                             </Grid>
