@@ -1,18 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import ReactDOM from "react-dom/client";
 
-import Header from "./Header/header"
-import AudioPlayer from "./AudioPlayer/AudioPlayer";
-import Result from "./Result/Result";
+import Header from "./Layouts/Header"
+import AudioPlayer from "./Components/AudioPlayer";
+import Result from "./Components/Result";
 
 import "./index.css";
 
 function App() {
   const [res, setRes] = useState(null);
 
-  const pushRes = res => {
+  const pushRes = useCallback( (res) => {
     setRes(res);
-  }
+  }, []);
 
   return (
     <>

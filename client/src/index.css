@@ -4,7 +4,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     padding: 2em 10em 2em 10em;
-    background-image: url('./img/bg-ovr-home.svg');
+    background-image: url('./Assets/Images/Background/bg-ovr-home.svg');
     background-repeat: no-repeat;
     z-index: -1;
     background-size: 100% auto;

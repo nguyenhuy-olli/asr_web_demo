@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ReactMic } from "react-mic";
-import WaveSurfer from "wavesurfer";
+import WaveSurfer from "wavesurfer.js";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
@@ -8,15 +8,10 @@ import IconButton from "@material-ui/core/IconButton";
 import PlayArrowIcon from "@material-ui/icons/PlayArrow";
 import StopIcon from "@material-ui/icons/Stop";
 import ReplayIcon from "@material-ui/icons/Replay";
-
 import { red } from "@material-ui/core/colors";
-
 import PauseIcon from "@material-ui/icons/Pause";
 import Grid from "@material-ui/core/Grid";
-
 import MicIcon from "@material-ui/icons/Mic";
-
-require('dotenv').config();
 
 const useStyles = makeStyles(theme => ({
     card: {
@@ -133,13 +128,13 @@ function AudioPlayer({ pushRes }) {
 
     if (!isPlaying) {
         transportPlayButton = (
-            <IconButton onClick={togglePlayback}>
+            <IconButton onClick={togglePlayback} disabled={!tempFile || record}>
                 <PlayArrowIcon className={classes.icon} />
             </IconButton>
         );
     } else {
         transportPlayButton = (
-            <IconButton onClick={togglePlayback}>
+            <IconButton onClick={togglePlayback} disabled={!tempFile || record}>
                 <PauseIcon className={classes.icon} />
             </IconButton>
         );
@@ -185,7 +180,7 @@ function AudioPlayer({ pushRes }) {
                             />
                         )}
                     </Grid>
-                    <Grid item container justify="center" className={classes.buttons}>
+                    <Grid item container justifyContent="center" className={classes.buttons}>
                         <Grid item container direction="row"
                             justifyContent="space-between"
                             alignItems="center" xs={12}>
@@ -215,7 +210,7 @@ function AudioPlayer({ pushRes }) {
                             )}
                             <Grid item>
                             {transportPlayButton}
-                            <IconButton onClick={stopPlayback}>
+                            <IconButton onClick={stopPlayback} disabled={!tempFile || record}>
                                     <StopIcon className={classes.icon} />
                                 </IconButton>
                             </Grid>
