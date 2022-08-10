@@ -68,7 +68,6 @@ def index():
     total_time = 0.0
     if request.method == "POST":
         file = request.files['audio_data']
-        print(file)
 
         file.seek(0)
 
@@ -77,10 +76,8 @@ def index():
         audio = audio.set_sample_width(2)
         audio = audio.set_channels(1)
 
-        audio.export('audio.wav', format='wav')
+        audio = audio.export(format='wav').read()
 
-        with open("audio.wav", "rb") as f:
-            audio = f.read()
         start_time = time.time()
         transcript = run_transcription(audio)
         end_time = time.time()
